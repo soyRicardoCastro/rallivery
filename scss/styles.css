@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+}
+
+[data-nav] .green {
+  background-color: #A5C739;
+}
+
+[data-nav] .green .cta {
+  background-color: #052D49;
+}
+
+[data-nav] .light-green {
+  background-color: #A2C415;
+}
+
+[data-nav] .light-green .cta {
+  background-color: #052D49;
+}
+
+[data-nav] .blue {
+  background-color: #052D49;
+}
+
+[data-nav] .blue .cta {
+  background-color: #A5C749;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: #A5C749;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo {
+  cursor: pointer;
+  width: 170px;
+  margin: 0 0 0 40px;
+}
+
+.nav__logo img {
+  width: 100%;
+  -webkit-transition: .3s ease transform;
+  transition: .3s ease transform;
+}
+
+.nav__logo img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: .8;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.nav ul li .cta {
+  padding: 13px 50px;
+  background-color: #052D49;
+  border-radius: 50px;
+}
+
+.nav ul li .cta:hover {
+  opacity: .8;
+}
+
+.nav ul:last-child {
+  margin-right: 40px;
+}
+
+.nav ul:last-child li {
+  gap: 25px;
+}
+
+.nav ul:last-child li a:last-child:hover {
+  text-decoration: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=styles.css.map */

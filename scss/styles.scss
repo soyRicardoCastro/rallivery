@@ -1,0 +1,134 @@
+// Fonts
+$font: 'Poppins', serif;
+
+// Colores
+$green: #A5C749;
+$green-1: #A5C739;
+$green-2: #A2C415;
+
+$white: #fff;
+
+$blue: #052D49;
+
+$gray: #c4c4c4;
+$light-gray: #f3f3f3;
+$dark-gray: #606060;
+$dark-grayBlue: #052D49;
+
+$nav-color-1: $green;
+$nav-color-2: $green-1;
+$nav-color-3: $green-2;
+$nav-color-4: $blue;
+
+$font-text-light: $gray;
+$font-body-dark: $dark-gray;
+$font-header-color: $dark-gray;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  margin: 0;
+}
+
+[data-nav] .green {
+  background-color: $nav-color-2;
+
+  .cta {
+    background-color: $blue;
+  }
+}
+
+[data-nav] .light-green {
+  background-color: $nav-color-3;
+
+  .cta {
+    background-color: $blue;
+  }
+}
+
+[data-nav] .blue {
+  background-color: $nav-color-4;
+
+  .cta {
+    background-color: $green;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: $nav-color-1;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    cursor: pointer;
+    width: 170px;
+    margin: 0 0 0 40px;
+
+    img {
+      width: 100%;
+      transition: .3s ease transform;
+
+      &:hover {
+        transform: scale(0.9);
+        opacity: .8;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    
+    li {
+      display: grid;
+      gap: 25px;
+      grid-auto-flow: column;
+      place-items: center;
+      a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 300;
+        transition: .3s ease all;
+
+        &:hover {
+          text-decoration: underline;
+          opacity: .8;
+        }
+      }
+
+      .cta {
+        padding: 13px 50px;
+        background-color: $blue;
+        border-radius: 50px;
+        
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+  ul:last-child {
+    margin-right: 40px;
+
+    li {
+      gap: 25px;
+
+      a:last-child:hover {
+        text-decoration: none;
+        transform: scale(0.9);
+      }
+    }
+  }
+}
