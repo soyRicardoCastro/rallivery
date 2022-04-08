@@ -13,14 +13,11 @@
   margin: 0 20px 0 0;
   height: 900px;
   position: relative;
-  top: 0;
+  top: -120px;
+  left: 30px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 5px 15px #606060;
-}
-
-#formFoo .form__cont .form__header {
-  padding-top: 45px;
 }
 
 .form__cont {
