@@ -1,7 +1,9 @@
 import { images } from '../constants'
+import '../scss/nav.css'
+
 const nav = document.querySelector('[data-nav]')
 
-export default function Nav (color = 'blue') {
+export default function Nav (color = 'green') {
   return nav.innerHTML = `
     <nav class='nav ${color}'>
       <figure class='nav__logo'>

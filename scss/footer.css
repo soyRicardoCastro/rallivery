@@ -1,0 +1,98 @@
+
+[data-footer] {
+  width: 100%;
+  height: 350px;
+  background-color: #606060;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+[data-footer] figure {
+  display: block;
+  margin: 0 auto;
+}
+
+[data-footer] figure img {
+  width: 100%;
+}
+
+[data-footer] p {
+  color: #fff;
+  font-weight: 300;
+}
+
+[data-footer] ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+[data-footer] ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+[data-footer] ul li a:hover {
+  text-decoration: underline;
+}
+
+[data-footer] ul li figure {
+  margin: 0;
+  width: 130px;
+  height: 40px;
+}
+
+[data-footer] ul li figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+[data-footer] ul li figure img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+[data-footer] ul li:first-child:not([data-foo]), [data-footer] ul [data-social] {
+  color: #A5C749;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+[data-footer] ul li [data-social] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+[data-footer] ul li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
