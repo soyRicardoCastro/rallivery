@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    margin-top: 50px;
+    margin-top: 80px;
 
     .hero__item {
       width: 350px;
@@ -120,6 +120,265 @@ body {
   }
 }
 
+// PARTNER
+.partner {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: $light-gray;
+
+  &__img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      //width: 100%;
+      height: 600px;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 80%;
+      margin: 50px auto;
+      
+      h2 {
+        color: $green;
+        font-size: 36px;
+      }
+
+      h3 {
+        color: $dark-gray;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      p {
+        color: $dark-gray;
+        font-size: 20px;
+        text-align: justify;
+      }
+    }
+  }
+}
+[data-partner] {
+  background-color: $white;
+
+  .partner__img {
+    height: 80%;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 450px;
+      height: 470px;
+    }
+  }
+
+  .partner__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: right;
+    }
+  }
+}
+
+.form {
+  width: 45%;
+  margin: 0 20px 0 0;
+  height: 900px;
+  position: relative;
+  top: 140px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px $dark-gray;
+
+  &__cont {
+    width: 75%;
+    margin: 50px auto 0;
+
+    .form__header{
+      font-size: 30px;
+      color: $dark-gray;
+      margin: 0;
+      span {
+        color: $green;
+      }
+    }
+
+    .form__p {
+      color: $dark-gray;
+      margin-bottom: 20px;
+    }
+
+    .form__row {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      padding: 15px 10px;
+      background-color: $light-gray;
+      margin-bottom: 10px;
+      border-radius: 15px;
+
+      label {
+        color: $gray;
+        font-size: 14px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        padding: 10px 0;
+        margin: 0;
+        background-color: inherit;
+        font-size: 20px;
+      }
+
+      select {
+        border: none;
+        font-size: 20px;
+        color: $dark-gray;
+        cursor: pointer;
+      }
+    }
+
+    .form__footer {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin: 20px auto 0;
+        padding: 1.3em 6em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: $white;
+        cursor: pointer;
+        background-color: $blue;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+       }
+       
+       button:hover {
+        background-color: $green;
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+       }
+       
+       button:active {
+        transform: translateY(-1px);
+       }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+
+        input {
+          padding: 5px;
+        }
+
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        
+        .container {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          font-size: 20px;
+          user-select: none;
+        }
+        
+        .checkmark {
+          position: relative;
+          top: 0;
+          left: 0;
+          height: 1.3em;
+          width: 1.3em;
+          background-color: #ccc;
+          border-radius: 25px;
+          transition: 0.15s;
+        }
+        
+        .container input:checked ~ .checkmark {
+          background-color: limegreen;
+          border-radius: 25px;
+          transition: 0.15s;
+        }
+        
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        .container input:checked ~ .checkmark:after {
+          display: block;
+        }
+        
+        .container .checkmark:after {
+          left: 0.45em;
+          top: 0.25em;
+          width: 0.25em;
+          height: 0.5em;
+          border: solid white;
+          border-width: 0 0.15em 0.15em 0;
+          transform: rotate(45deg);
+        }
+
+        label {
+          color: $dark-gray;
+          font-size: 14px;
+
+          a {
+            color: $green;
+          }
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: row;
+      .email, .phone {
+        display: flex;
+        flex-direction: column;
+      }
+      .email {
+        width: 60%;
+      }
+
+      .phone {
+        width: 40%;
+        padding-left: 10px;
+        border-left: 1px solid $gray;
+      }
+    }
+  }
+}
 
 /*
 [data-nav] .green {

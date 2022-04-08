@@ -20,15 +20,15 @@ export default function Form (item) {
     </div>
     <div class="form__row">
       <label for="nameCognome">Nome e Cognome</label>
-      <input type="email" id='nameCognome' placeholder="Guillermo">
+      <input type="text" id='nameCognome' placeholder="Guillermo">
     </div>
-    <div class="form__row" data-info>
-      <div data-email>
+    <div class="form__row info">
+      <div class='email'>
         <label for="email">Email</label>
         <input type="email" id='email'>
       </div>
 
-      <div data-phone>
+      <div class='phone'>
         <label for="phone">Telefono</label>
         <input type="text" placeholder="2554102348" id='phone'>
       </div>

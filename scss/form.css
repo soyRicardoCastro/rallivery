@@ -1,4 +1,4 @@
-[data-header] .form {
+.form {
   width: 45%;
   margin: 0 20px 0 0;
   height: 900px;
@@ -8,23 +8,38 @@
   background-color: #fff;
   box-shadow: 0px 5px 15px #606060;
 }
-[data-header] .form__cont {
+#formFoo {
+  width: 45%;
+  margin: 0 20px 0 0;
+  height: 900px;
+  position: relative;
+  top: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px #606060;
+}
+
+#formFoo .form__cont .form__header {
+  padding-top: 45px;
+}
+
+.form__cont {
   width: 75%;
   margin: 50px auto 0;
 }
-[data-header] .form__cont .form__header {
+.form__cont .form__header {
   font-size: 30px;
   color: #606060;
   margin: 0;
 }
-[data-header] .form__cont .form__header span {
+.form__cont .form__header span {
   color: #A5C749;
 }
-[data-header] .form__cont .form__p {
+.form__cont .form__p {
   color: #606060;
   margin-bottom: 20px;
 }
-[data-header] .form__cont .form__row {
+.form__cont .form__row {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -33,11 +48,11 @@
   margin-bottom: 10px;
   border-radius: 15px;
 }
-[data-header] .form__cont .form__row label {
+.form__cont .form__row label {
   color: #c4c4c4;
   font-size: 14px;
 }
-[data-header] .form__cont .form__row input {
+.form__cont .form__row input {
   border: none;
   outline: none;
   padding: 10px 0;
@@ -45,17 +60,18 @@
   background-color: inherit;
   font-size: 20px;
 }
-[data-header] .form__cont .form__row select {
+.form__cont .form__row select {
   border: none;
   font-size: 20px;
   color: #606060;
   cursor: pointer;
+  background: inherit;
 }
-[data-header] .form__cont .form__footer {
+.form__cont .form__footer {
   display: flex;
   flex-direction: column;
 }
-[data-header] .form__cont .form__footer button {
+.form__cont .form__footer button {
   margin: 20px auto 0;
   padding: 1.3em 6em;
   font-size: 12px;
@@ -72,39 +88,39 @@
   cursor: pointer;
   outline: none;
 }
-[data-header] .form__cont .form__footer button:hover {
+.form__cont .form__footer button:hover {
   background-color: #A5C749;
   box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
-[data-header] .form__cont .form__footer button:active {
+.form__cont .form__footer button:active {
   transform: translateY(-1px);
 }
-[data-header] .form__cont .form__footer div {
+.form__cont .form__footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
 }
-[data-header] .form__cont .form__footer div input {
+.form__cont .form__footer div input {
   padding: 5px;
 }
-[data-header] .form__cont .form__footer div .container input {
+.form__cont .form__footer div .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-[data-header] .form__cont .form__footer div .container {
+.form__cont .form__footer div .container {
   display: block;
   position: relative;
   cursor: pointer;
   font-size: 20px;
   user-select: none;
 }
-[data-header] .form__cont .form__footer div .checkmark {
+.form__cont .form__footer div .checkmark {
   position: relative;
   top: 0;
   left: 0;
@@ -114,20 +130,20 @@
   border-radius: 25px;
   transition: 0.15s;
 }
-[data-header] .form__cont .form__footer div .container input:checked ~ .checkmark {
+.form__cont .form__footer div .container input:checked ~ .checkmark {
   background-color: limegreen;
   border-radius: 25px;
   transition: 0.15s;
 }
-[data-header] .form__cont .form__footer div .checkmark:after {
+.form__cont .form__footer div .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-[data-header] .form__cont .form__footer div .container input:checked ~ .checkmark:after {
+.form__cont .form__footer div .container input:checked ~ .checkmark:after {
   display: block;
 }
-[data-header] .form__cont .form__footer div .container .checkmark:after {
+.form__cont .form__footer div .container .checkmark:after {
   left: 0.45em;
   top: 0.25em;
   width: 0.25em;
@@ -136,25 +152,25 @@
   border-width: 0 0.15em 0.15em 0;
   transform: rotate(45deg);
 }
-[data-header] .form__cont .form__footer div label {
+.form__cont .form__footer div label {
   color: #606060;
   font-size: 14px;
 }
-[data-header] .form__cont .form__footer div label a {
+.form__cont .form__footer div label a {
   color: #A5C749;
 }
-[data-header] .form__cont [data-info] {
+.form__cont .info {
   display: flex;
   flex-direction: row;
 }
-[data-header] .form__cont [data-info] [data-email], [data-header] .form__cont [data-info] [data-phone] {
+.form__cont .info .email, .form__cont .info .phone {
   display: flex;
   flex-direction: column;
 }
-[data-header] .form__cont [data-info] [data-email] {
+.form__cont .info .email {
   width: 60%;
 }
-[data-header] .form__cont [data-info] [data-phone] {
+.form__cont .info .phone {
   width: 40%;
   padding-left: 10px;
   border-left: 1px solid #c4c4c4;
