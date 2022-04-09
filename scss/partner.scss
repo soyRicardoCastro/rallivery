@@ -98,5 +98,125 @@ $transition-hover: .3s ease all;
       }
     }
   }
+}
 
+.partner__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  gap: 40px;
+
+  h2 {
+    color: $dark-gray;
+    font-size: 36px;
+  }
+
+  .partner__cont {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    div {
+      h3 {
+        text-align: center;
+        color: $dark-gray;
+      }
+    }
+  }
+  
+  .dots {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+
+    div {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $gray;
+      transition: $transition-hover;
+
+      &:hover {
+        background-color: $dark-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.team {
+  display: flex;
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: $dark-gray;
+    font-size: 42px;
+
+    span {
+      border-bottom: 8px solid $green-2;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-item {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-size: cover;
+
+      h2 {
+        font-size: 42px;
+        color: $green-2;
+        margin: 0;
+      }
+
+      p {
+        width: 80%;
+        text-align: center;
+        color: #fff;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 1em 2em;
+      }
+    }
+
+    [data-team-1] {
+      background-image: url(../assets/partner/team-1.png);
+      button {
+        background-color: $green-2;
+      }
+    }
+
+    [data-team-2] {
+      background-image: url(../assets/partner/team-2.png);
+    }
+
+    [data-team-3] {
+      background-image: url(../assets/partner/team-3.png);
+      button {
+        background-color: #9097d4;
+      }
+    }
+  }
 }

@@ -7,14 +7,14 @@ export default function Nav (color = 'green') {
   return nav.innerHTML = `
     <nav class='nav ${color}'>
       <figure class='nav__logo'>
-        <img src="${images.logoNavSvg}" alt="Logo Rallivery" />
+        <a href='index.html'><img src="${images.logoNavSvg}" alt="Logo Rallivery" /></a>
       </figure>
 
       <ul>
         <li>
           <a href="chisiamo.html">Chi siamo</a>
-          <a href="partner.html">Diventa Rallista</a>
-          <a href="#">Diventa Partner</a>
+          <a href="#">Diventa Rallista</a>
+          <a href="partner.html">Diventa Partner</a>
         </li>
       </ul>
 

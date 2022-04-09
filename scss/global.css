@@ -55,6 +55,42 @@ body {
   font-size: 20px;
   text-align: justify;
 }
+.partner__text div img {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+}
+
+.partner__text button {
+  font-size: 18px;
+}
+
+[data-partner-c] {
+  text-align: center;
+}
+[data-partner-c] .partner__text div {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+[data-partner-c] .partner__text div button {
+  padding: 1em 3em;
+  margin-top:15px;
+}
+
+[data-partner-c] .partner__text div h2 {
+  text-align: right;
+  margin: 0;
+} 
+
+[data-partner-c] .partner__text div p {
+  text-align: right;
+  margin: 0;
+} 
 
 [data-partner] {
   background-color: #fff;
@@ -82,11 +118,11 @@ body {
 
 /*  BUTTON  */
 button {
-  padding: 1.3em 2em;
-  width: 220px;
+  padding: 1.3em 6em;
   font-size: 12px;
+  font-family: inherit;
   text-transform: capitalize;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-weight: 500;
   color: #fff;
   cursor: pointer;
@@ -97,15 +133,20 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-}
-
-button:hover {
-  background-color: #A5C749;
+ }
+ 
+ button:hover {
+  background-color: #A5C749;  
   box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
   color: #fff;
   transform: translateY(-7px);
-}
-
-button:active {
+ }
+ 
+ button:active {
   transform: translateY(-1px);
-}
+ }
+/*
+  background-color: #052D49;
+
+  background-color: #A5C749;
+*/

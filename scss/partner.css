@@ -66,4 +66,107 @@
   background-color: #052D49;
 }
 
+.partner__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  gap: 40px;
+}
+.partner__items h2 {
+  color: #606060;
+  font-size: 36px;
+}
+.partner__items .partner__cont {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.partner__items .partner__cont div h3 {
+  text-align: center;
+  color: #606060;
+}
+.partner__items .dots {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+}
+.partner__items .dots div {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  transition: 0.3s ease all;
+}
+.partner__items .dots div:hover {
+  background-color: #606060;
+  cursor: pointer;
+}
+
+.team {
+  display: flex;
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.team h2 {
+  color: #606060;
+  font-size: 42px;
+}
+.team h2 span {
+  border-bottom: 8px solid #A2C415;
+}
+.team__items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.team__items-item {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-size: cover;
+}
+.team__items-item h2 {
+  font-size: 42px;
+  color: #A2C415;
+  margin: 0;
+}
+.team__items-item p {
+  width: 80%;
+  text-align: center;
+  color: #fff;
+}
+.team__items-item button {
+  font-size: 16px;
+  padding: 1em 2em;
+}
+.team__items [data-team-1] {
+  background-image: url(../assets/partner/team-1.png);
+}
+.team__items [data-team-1] button {
+  background-color: #A2C415;
+}
+.team__items [data-team-2] {
+  background-image: url(../assets/partner/team-2.png);
+}
+.team__items [data-team-3] {
+  background-image: url(../assets/partner/team-3.png);
+}
+.team__items [data-team-3] button {
+  background-color: #9097d4;
+}
+
 /*# sourceMappingURL=partner.css.map */
