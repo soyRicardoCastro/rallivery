@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+}
+
+/* Partner => Images and text section */
+
+.partner {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: #f3f3f3;
+}
+.partner__img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner__img img {
+  width: 100%;
+  height: 600px;
+}
+.partner__text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner__text div {
+  width: 80%;
+  margin: 50px auto;
+}
+.partner__text div h2 {
+  color: #A5C749;
+  font-size: 36px;
+}
+.partner__text div h3 {
+  color: #606060;
+  font-size: 26px;
+  font-weight: 700;
+}
+.partner__text div p {
+  color: #606060;
+  font-size: 20px;
+  text-align: justify;
+}
+
+[data-partner] {
+  background-color: #fff;
+}
+[data-partner] .partner__img {
+  height: 80%;
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[data-partner] .partner__img img {
+  width: 450px;
+  height: 470px;
+}
+[data-partner] .partner__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[data-partner] .partner__text h3 {
+  text-align: right;
+}
+
+/*  BUTTON  */
+button {
+  padding: 1.3em 2em;
+  width: 220px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: #052D49;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #A5C749;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
