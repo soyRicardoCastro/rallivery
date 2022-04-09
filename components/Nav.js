@@ -13,7 +13,7 @@ export default function Nav (color = 'green') {
       <ul>
         <li>
           <a href="chisiamo.html">Chi siamo</a>
-          <a href="#">Diventa Rallista</a>
+          <a href="partner.html">Diventa Rallista</a>
           <a href="#">Diventa Partner</a>
         </li>
       </ul>
