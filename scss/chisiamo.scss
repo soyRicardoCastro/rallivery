@@ -1,0 +1,117 @@
+// Fonts
+$green: #A5C749;
+$green-1: #A5C739;
+$green-2: #A2C415;
+
+$white: #fff;
+
+$blue: #052D49;
+
+$gray: #c4c4c4;
+$light-gray: #f3f3f3;
+$dark-gray: #606060;
+$dark-grayBlue: #052D49;
+
+$transition-hover: .3s ease all;
+
+header {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../assets/header-1.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    color: $white;
+    font-size: 46px;
+    width: 50%;
+    text-align: center;
+    line-height: 65px;
+  }
+}
+
+.valori {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  &__text {
+    margin-top: 50px;
+
+    h2 {
+      font-size: 36px;
+      color: $dark-gray;
+    }
+  }
+
+  &__items {
+    margin: 70px 0 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+    &-item {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h3 {
+        color: $dark-gray;
+        font-size: 26px;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 370px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+
+    h2 {
+      color: $white;
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+      span {
+        color: $green-1;
+        font-weight: 700;
+      }
+    }
+  }
+
+  background-image: url(../assets/chisiamo/footer-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
