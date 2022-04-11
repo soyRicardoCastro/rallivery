@@ -8,6 +8,18 @@
   background-color: #fff;
   box-shadow: 0px 5px 15px #606060;
 }
+.formRallista {
+  position: relative;
+  top: 60px;
+  left: 60px;
+  width: 40%;
+  margin: 0;
+  height: 830px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(200, 200, 200, 0.4);
+}
 #formFoo {
   width: 45%;
   margin: 0 20px 0 0;
@@ -19,7 +31,6 @@
   background-color: #fff;
   box-shadow: 0px 5px 15px #606060;
 }
-
 .form__cont {
   width: 75%;
   margin: 50px auto 0;
@@ -57,6 +68,17 @@
   background-color: inherit;
   font-size: 20px;
 }
+.form__cont .form__row textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #606060;
+  background-color: transparent;
+  max-height: 65px;
+  resize: none;
+}
+
 .form__cont .form__row select {
   border: none;
   font-size: 20px;
@@ -160,6 +182,21 @@
   display: flex;
   flex-direction: row;
 }
+.form__cont .info .select-phone {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid #ccc;
+  color: #606060;
+  font-size: 20px;
+}
+.form__cont .info .phone-rallista {
+  padding-left: 10px;
+  width: 70%;
+}
+
 .form__cont .info .email, .form__cont .info .phone {
   display: flex;
   flex-direction: column;

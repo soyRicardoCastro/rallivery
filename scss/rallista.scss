@@ -1,0 +1,229 @@
+header {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(../assets/rallista/header-image.png);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.pilot {
+  width: 100%;
+  margin: 170px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+  h2 {
+    font-size: 36px;
+    color: #606060;
+
+    span {
+      border-bottom: 10px solid #A5C749;
+    }
+  }
+
+  &__items {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 33%;
+      box-shadow: 2px 10px 20px rgba(200,200,200,0.5);
+      height: 200px;
+      padding-left: 20px;
+
+      img {
+        width: 35%;
+        height:35%;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #606060;
+      }
+    }
+  }
+}
+
+.serve {
+  width: 100%;
+  background-image: linear-gradient(to right, #052D49 60%, rgba(240,240,240) 40%);
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  h2 {
+    color: #fff;
+    font-size: 40px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  div:first-child {
+    width: 50%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__text {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      width: 85%;
+      margin: 0 auto;
+      
+      li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    img {
+      position: relative;
+      bottom: 120px;
+      height: 600px;
+    }
+  }
+}
+
+.funziona {
+  display: flex;
+  height: 600px;
+  margin: 150px 0;
+  gap: 10px;
+  justify-content: space-between;
+
+  h2 {
+    color: #606060;
+    font-size: 42px;
+    margin: 0;
+  }
+
+  p {
+    color: #606060;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 75%;
+      height: 75%;
+    }
+  }
+
+  .funziona__cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .funziona__cont-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        gap: 10px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+
+        p {
+          width: 80%;
+          text-align: center;
+          font-weight: 300;
+          font-size: 18px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.nostro {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  background-image: linear-gradient(120deg, rgba(53,73,95,.3) 0%, rgba(53,73,95,.3) 100%), url(../assets/rallista/footer-image.png);
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    color: #fff;
+    font-size: 42px;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+
+    span {
+      color: #A5C749;
+    }
+  }
+
+  button {
+    background-color: #A5C749;
+    font-size: 18px;
+    padding: .4em 1.7em;
+    font-weight: 700;
+
+    &:hover {
+      background-color: #052D49;
+    }
+  }
+}

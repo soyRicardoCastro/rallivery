@@ -6,7 +6,7 @@ import google from '../assets/google-play.png'
 import apple from '../assets/app-store.png'
 import facebook from '../assets/facebook.svg'
 import instagram from '../assets/instagram.svg'
-
+import italia from '../assets/rallista/italia.png'
 
 export default {
   logoNavPng,
@@ -16,5 +16,6 @@ export default {
   google,
   apple,
   facebook,
-  instagram
+  instagram,
+  italia
 }

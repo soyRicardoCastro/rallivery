@@ -7,7 +7,9 @@ export default function Footer () {
   return footer.innerHTML = `
   <div>
     <figure>
-      <img src="${images.logoFooPng}" alt="Logo Rallivery" />
+      <a href='index.html'>
+        <img src="${images.logoFooPng}" alt="Logo Rallivery" />
+      </a>
     </figure>
     <p>
     &#169 2022 - Rallivery. Tutti i <br />
@@ -38,9 +40,9 @@ export default function Footer () {
 
   <div>
     <ul>
-      <li data-foo><a href="#">Chi siamo</a></li>
-      <li><a href="#">Diventa Ralli sta</a></li>
-      <li><a href="#">Diventa Partner</a></li>
+      <li data-foo><a href="chisiamo.html">Chi siamo</a></li>
+      <li><a href="rallista.html">Diventa Rallista</a></li>
+      <li><a href="partner.html">Diventa Partner</a></li>
     </ul>
   </div>
 

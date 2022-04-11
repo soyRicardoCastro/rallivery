@@ -79,7 +79,6 @@
   font-size: 36px;
 }
 .partner__items .partner__cont {
-  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
